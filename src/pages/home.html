@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="d-grid">
+    <!-- nav sidebar -->
+    <div>
+        <nav class="sidebar">
+            <div>
+                <div>
+                    <img class="logo" src="../assets/icons/logo-light.svg" alt="Logo">
+                </div>
+
+                <div>
+                    <h4>ALL BOARDS (8)</h4>
+                    <ul>
+                            <li class="selected-board"><img class="icon" src="../assets/icons/icon-board.svg" alt="borad icon">
+                                <a href="#" style="color: white;">Platform Launch</a>
+                            </li>
+
+                        <li><img class="icon" src="../assets/icons/icon-board.svg" alt="borad icon"><a
+                                href="#">Marketing
+                                Plan</a>
+                        </li>
+                        <li><img class="icon" src="../assets/icons/icon-board.svg" alt="borad icon"><a
+                                href="#">Roadmap</a>
+                        </li>
+                        <li><img class="icon" src="../assets/icons/icon-board.svg" alt="borad icon"><a href="#">+ Create
+                                New
+                                Board</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- dark light theme switch -->
+            <div>
+                <div class="theme-div">
+                    <img src="../assets/icons/icon-light-theme.svg" class="icon" alt="light">
+                    <div class="switch"><input type="checkbox"><span class="slider round"></span>
+                    </div>
+                    <img src="../assets/icons/icon-dark-theme.svg" class="icon" alt="dark">
+                </div>
+
+                <!-- hide and show sidebar -->
+                <label class="hide-sidebar">
+                    <img src="../assets/icons/icon-hide-sidebar.svg" class="icon" alt="Hide Sidebar" id="hide">
+                    <label for="hide">Hide Sidebar</label>
+                </label>
+            </div>
+        </nav>
+    </div>
+
+
+    <div>
+        <!-- Header -->
+        <header>
+            <h2>Platform Launch</h2>
+            <button>+ Add New Task</button>
+            <img src="../assets/icons/icon-vertical-ellipsis.svg" alt="Menu">
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Column TODO -->
+            <div class="task-column">
+                <div class="task-column-header"><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <circle r="5" cx="10" cy="10" fill="white" />
+                    </svg>
+                    <h4>TODO (4)</h4>
+                </div>
+
+                <!-- Task Items -->
+                <div>
+                    <h2>Build UI for onboarding flow</h2>
+                    <p>0 of 3 subtasks</p>
+                </div>
+                <div>
+                    <h2>Build UI for search</h2>
+                    <p>0 of 1 subtasks</p>
+                </div>
+                <div>
+                    <h2>Build settings UI</h2>
+                    <p>0 of 2 subtasks</p>
+                </div>
+                <div>
+                    <h2>QA and test all major user journeys</h2>
+                    <p>0 of 2 subtasks</p>
+                </div>
+            </div>
+
+            <!-- Column DOING -->
+            <div class="task-column">
+                <div class="task-column-header"><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <circle r="5" cx="10" cy="10" fill="white" />
+                    </svg>
+                    <h4>DOING (6)</h4>
+                </div>
+
+                <!-- Task Items -->
+                <div>
+                    <h2>Design settings and search pages</h2>
+                    <p>0 of 3 subtasks</p>
+                </div>
+                <div>
+                    <h2>Add account management endpoints</h2>
+                    <p>0 of 1 subtasks</p>
+                </div>
+                <div>
+                    <h2>Design onboarding flow</h2>
+                    <p>0 of 2 subtasks</p>
+                </div>
+                <div>
+                    <h2>Add search endpoints</h2>
+                    <p>1 of 2 subtasks</p>
+                </div>
+                <div>
+                    <h2>Add authentication endpoints</h2>
+                    <p>1 of 2 subtasks</p>
+                </div>
+                <div>
+                    <h2>Research pricing points of various competitors and trial different business models</h2>
+                    <p>1 of 3 subtasks</p>
+                </div>
+            </div>
+
+            <!-- Column DONE -->
+            <div class="task-column">
+                <div class="task-column-header"><svg height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <circle r="5" cx="10" cy="10" fill="white" />
+                    </svg>
+                    <h4>DONE (7)</h4>
+                </div>
+
+                <!-- Task Items -->
+                <div>
+                    <h2>Conduct 5 wireframe tests</h2>
+                    <p>0 of 3 subtasks</p>
+                </div>
+                <div>
+                    <h2>Create wireframe prototype</h2>
+                    <p>1 of 1 subtasks</p>
+                </div>
+                <div>
+                    <h2>Review results of usability tests and iterate</h2>
+                    <p>0 of 2 subtasks</p>
+                </div>
+                <div>
+                    <h2>Create paper prototypes and conduct 10 usability tests with potential customers</h2>
+                    <p>0 of 2 subtasks</p>
+                </div>
+                <div>
+                    <h2>Market discovery</h2>
+                    <p>0 of 3 subtasks</p>
+                </div>
+                <div>
+                    <h2>Competitor analysis</h2>
+                    <p>1 of 1 subtasks</p>
+                </div>
+                <div>
+                    <h2>Research the market</h2>
+                    <p>0 of 2 subtasks</p>
+                </div>
+            </div>
+
+            <!-- New Column -->
+            <div class="new-column">
+                <h1>+ New Column</h1>
+            </div>
+        </main>
+    </div>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

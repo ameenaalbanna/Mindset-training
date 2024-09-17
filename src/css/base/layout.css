@@ -1,0 +1,260 @@
+/* General Styles */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #232431;
+    color: #fff;
+    grid-template-columns: 15% 85% ;
+    gap: 0px;
+}
+
+h2{
+    margin: 0;
+    color: #fff;
+    
+}
+
+p {
+    color: #8E8E8E;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 15%;
+    background-color: #2c2d3e;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    justify-content: space-between;
+    border-right: 1px solid #6d6d6d;
+}
+
+
+.theme-div{
+    width: 80%;
+    background-color: #15151ab4;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+
+}
+.theme-div > *{
+    display: inline;
+}
+
+.sidebar h4 {
+    color: #8E8E8E;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 30px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #7f828b;
+    font-size: 14px;
+}
+
+a{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.selected-board {
+    background-color: #635FC7;
+    border-radius: 0 50px 50px 0;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.selected-board a{
+    color: #fff;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #7b40d5;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+.hide-sidebar {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hide-sidebar img {
+    margin-right: 10px;
+}
+
+.hide-sidebar label {
+    cursor: pointer;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c2d3e;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 80% 10% 5%;
+    align-items: center;
+    gap: 5%;
+    border-bottom: 1px solid #6d6d6d;
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header button {
+    background-color: #635FC7;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+header button:hover {
+    background-color: #817DCE;
+}
+
+/* Main Styles */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+main h4 {
+    margin-bottom: 20px;
+    display: inline;
+}
+
+main svg{
+    display: inline;
+}
+
+main div {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+/* Task Columns */
+.task-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-column div {
+    background-color: #2c2d3e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.task-column .task-column-header{
+    background-color: #ffffff00;
+    padding: 0px;
+}
+
+.task-column div:hover {
+    background-color: #3E3F4E;
+}
+
+.task-column h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.task-column p {
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* New Column Style */
+.new-column {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #20212C;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.new-column h1 {
+    color: #b1b1b1d8;
+    font-size: 18px;
+    margin: 0;
+    font-weight: bolder
+}
+
+.new-column:hover {
+    background-color: #3E3F4E;
+}
